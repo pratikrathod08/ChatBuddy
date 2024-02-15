@@ -16,7 +16,14 @@
 	
 	<body>
 		<div class=" h-100">
-			<div class="d-flex flex-row justify-content-start h-100">		
+			<div class="d-flex flex-row justify-content-start h-100">
+				<div class="sidebar">
+                    <h1 class="cat-heading">Categories</h1>
+                    <button id="myButton1" value="finance" type="button" class="cat-button">Finanace</button>
+                    <button id="myButton2" value="law" type="button" class="cat-button">Law</button>
+                    <button id="myButton3" value="technology" type="button" class="cat-button">Technology</button>
+                    
+                </div>		
 				<div class="col-md-8 col-xl-6 chat">
 					<div class="card">
 						<div class="card-header msg_head">
@@ -77,6 +84,39 @@
 					event.preventDefault();
 				});
 			});
+
+			document.getElementById("myButton1").addEventListener("click", function(){  
+				// Get the button value
+				var buttonValue = this.value;
+
+				// Send the value to the Flask backend using an XMLHttpRequest or fetch
+				var xhr = new XMLHttpRequest();
+				xhr.open('POST', '/get', true);
+				xhr.setRequestHeader('Content-Type', 'application/json');
+				xhr.send(JSON.stringify({ 'button_value': buttonValue }));
+			})
+
+			document.getElementById("myButton2").addEventListener("click", function(){  
+				// Get the button value
+				var buttonValue = this.value;
+
+				// Send the value to the Flask backend using an XMLHttpRequest or fetch
+				var xhr = new XMLHttpRequest();
+				xhr.open('POST', '/get', true);
+				xhr.setRequestHeader('Content-Type', 'application/json');
+				xhr.send(JSON.stringify({ 'button_value': buttonValue }));
+			})
+
+			document.getElementById("myButton3").addEventListener("click", function(){  
+				// Get the button value
+				var buttonValue = this.value;
+
+				// Send the value to the Flask backend using an XMLHttpRequest or fetch
+				var xhr = new XMLHttpRequest();
+				xhr.open('POST', '/get', true);
+				xhr.setRequestHeader('Content-Type', 'application/json');
+				xhr.send(JSON.stringify({ 'button_value': buttonValue }));
+			})
 		</script>
         
     </body>
