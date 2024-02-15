@@ -6,6 +6,8 @@ from langchain_community.vectorstores import Chroma
 from langchain_openai import OpenAI
 from langchain import embeddings
 import os
+import warnings
+warnings.filterwarnings("ignore")
 
 load_dotenv()
 client = OpenAI()
