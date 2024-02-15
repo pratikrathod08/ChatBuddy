@@ -1,0 +1,18 @@
+flask
+streamlit
+python-dotenv
+langchain
+PyPDF2
+pypdf
+chromadb==0.3.29
+langchain-community
+flask_wtf
+wtforms
+openai
+tiktoken
+python-dotenv
+langchain-openai
+gunicorn
+
+
+-e .
