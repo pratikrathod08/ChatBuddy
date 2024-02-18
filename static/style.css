@@ -11,7 +11,7 @@ body,html{
 	display:flex;
 	flex-direction: column;
 	align-items: start;
-	background-color: rgb(35, 32, 40);
+	background-color:rgb(38, 51, 61);
 	gap:10px;
 	padding:10px;
 }
@@ -39,12 +39,12 @@ body,html{
 }
 
 .cat-button:hover {
-	background-color: rgb(89, 89, 201);
+	background-color: rgb(46, 46, 158);
 	color:white;
 }
 
 .selected {
-	background-color: rgb(89, 89, 201);
+	background-color: rgb(46, 46, 158);
 	color: white;
 	/* add any other styling you want for a selected button */
 	
@@ -53,7 +53,7 @@ body,html{
 /* .selected { border: 2px dashed red; } */
 
 .cat-button.selected {
-	background-color: #ba5c5c;
+	background-color:rgb(46, 46, 158);
 	color: white;
   }
 
