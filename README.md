@@ -1,4 +1,4 @@
-# FinanceBuddy
+# ChatBuddy
 
 ChatBuddy is chatbot for Various Categories.
 
