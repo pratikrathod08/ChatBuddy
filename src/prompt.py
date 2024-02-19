@@ -12,6 +12,7 @@ Question: \n{question}\n
 Answer:
 """
 
+
 prompt_template_technology = """
 Answer the question as detailed as possible from the provided context, don't make answer from youself and answer only from given context if the answer is not in
 provided context, just say "Answer is not available in the context kindly ask questions related to computer science and technology", don't provide the wrong answer or not to try answer from yourself.\n\n
@@ -22,6 +23,7 @@ Question: \n{question}\n
 
 Answer:
 """
+
 
 prompt_template_law = """
 Answer the question as detailed as possible from the provided context, don't make answer from youself and answer only from given context if the answer is not in

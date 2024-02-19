@@ -1,3 +1,3 @@
-# FinanceBuddy
+# ChatBuddy
 
 

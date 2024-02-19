@@ -12,8 +12,6 @@
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 		<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css')}}"/>
 	</head>
-	
-	
 	<body>
 		<div class=" h-100">
 			<div class="d-flex flex-row justify-content-start h-100">
@@ -22,16 +20,13 @@
                     <button id="myButton1" value="finance" type="button" class="cat-button">Finanace</button>
                     <button id="myButton2" value="law" type="button" class="cat-button">Law</button>
                     <button id="myButton3" value="technology" type="button" class="cat-button">Technology</button>
-                    
                 </div>		
 				<div class="col-md-8 col-xl-6 chat">
 					<div class="card">
 						<div class="card-header msg_head">
 							<div class="d-flex bd-highlight">
 								<div class="img_cont">
-									<!-- <img src="https://i.ibb.co/fSNP7Rz/icons8-chatgpt-512.png" class="rounded-circle user_img"> -->
 									<img src="https://png.pngtree.com/png-vector/20220611/ourlarge/pngtree-chatbot-icon-chat-bot-robot-png-image_4841963.png" class="rounded-circle user_img">
-									
 									<span class="online_icon"></span>
 								</div>
 								<div class="user_info">
@@ -40,9 +35,7 @@
 								</div>
 							</div>
 						</div>
-						<div id="messageFormeight" class="card-body msg_card_body">
-							
-							
+						<div id="messageFormeight" class="card-body msg_card_body">	
 						</div>
 						<div class="card-footer">
 							<form id="messageArea" class="input-group">
@@ -56,7 +49,6 @@
 				</div>
 			</div>
 		</div>
-		
 		<script>
 			$(document).ready(function() {
 				$("#messageArea").on("submit", function(event) {
@@ -140,8 +132,6 @@
 				});
 			  });
 			});
-
 		</script>
-        
     </body>
 </html>
