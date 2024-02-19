@@ -39,7 +39,7 @@ def home():
         button_value = data.get('button_value','')
         global persist_directory
         persist_directory = select_database(button_value)
-        return None
+        return ""
 
     if not request.is_json:
         question = request.form['msg']
